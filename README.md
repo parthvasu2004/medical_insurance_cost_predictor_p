@@ -92,7 +92,7 @@ Visit `http://127.0.0.1:5000/` in your browser to access the web app.
 🔗 **Live Deployment**
 
 
-The application is deployed on Render. Try it out here: **[Live Demo](Replace with actual URL)**
+The application is deployed on Render. [Try it out here: **[Live Demo](Replace with actual URL)**](https://medical-insurance-cost-predictor-mhp.onrender.com)
 
 
 ⚠️ **Important Note:**
