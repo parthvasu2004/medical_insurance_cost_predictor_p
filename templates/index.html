@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insurance Cost Predictor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Predict Your Medical Insurance Cost</h1>
+        <form id="predictionForm">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+            </select><br>
+
+            <label for="bmi">BMI:</label>
+            <input type="number" id="bmi" name="bmi" step="0.01" required><br>
+
+            <label for="children">Children:</label>
+            <input type="number" id="children" name="children" required><br>
+
+            <label for="smoker">Smoker:</label>
+            <select id="smoker" name="smoker">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br>
+
+            <label for="region">Region:</label>
+            <select id="region" name="region">
+                <option value="0">Southeast</option>
+                <option value="1">Southwest</option>
+                <option value="2">Northeast</option>
+                <option value="3">Northwest</option>
+            </select><br>
+
+            <input type="submit" value="Predict">
+        </form>
+        <div id="result"></div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#predictionForm').on('submit', function(event){
+                event.preventDefault();
+                $.ajax({
+                    url: '/predict',
+                    method: 'POST',
+                    data: $(this).serialize(),
+                    success: function(response){
+                        $('#result').html('<p>The estimated insurance cost is: <strong>₹ ' + response + '</strong></p>');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
