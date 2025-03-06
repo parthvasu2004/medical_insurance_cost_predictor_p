@@ -36,7 +36,7 @@ medical_insurance_cost_predictor_p/
 │── .gitignore              # Ignored files  
 │── README.md               # Project documentation  
 │── CollabNotebookMCP.ipynb # Jupyter Notebook for training  
-```
+
 
 ⚙️ **Installation & Setup**
 
@@ -46,7 +46,7 @@ medical_insurance_cost_predictor_p/
 
 git clone https://github.com/parthvasu2004/medical_insurance_cost_predictor_p.git
 cd medical_insurance_cost_predictor_p
-```
+
 
 2️⃣ Create & Activate Virtual Environment (Optional but Recommended)
 
@@ -54,19 +54,19 @@ cd medical_insurance_cost_predictor_p
 python -m venv venv
 source venv/bin/activate  # On macOS/Linux
 venv\Scripts\activate     # On Windows
-```
+
 
 3️⃣ Install Dependencies
 
 
 pip install -r requirements.txt
-```
+
 
 4️⃣ Run the Application
 
 
 python app.py
-```
+
 Visit `http://127.0.0.1:5000/` in your browser to access the web app.
 
 
@@ -92,7 +92,7 @@ Visit `http://127.0.0.1:5000/` in your browser to access the web app.
 🔗 **Live Deployment**
 
 
-The application is deployed on Render. [Try it out here: **[Live Demo](Replace with actual URL)**](https://medical-insurance-cost-predictor-mhp.onrender.com)
+The application is deployed on Render. https://medical-insurance-cost-predictor-mhp.onrender.com
 
 
 ⚠️ **Important Note:**
@@ -118,5 +118,5 @@ This project is licensed under the MIT License – free to use and modify.
 
 👤 **Parth Vasu**  
 📧 parthvasu2004@gmail.com  
-🔗 [[LinkedIn](Your LinkedIn Profile)](https://www.linkedin.com/in/parth-pandey-3442a9256/)
+🔗 https://www.linkedin.com/in/parth-pandey-3442a9256/
 
